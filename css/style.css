@@ -43,8 +43,9 @@ body {
 }
 
 #greeting {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 #todo-list {
@@ -74,7 +75,7 @@ body {
 #todo-list {
   list-style: none;
   padding: 0;
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
 }
 

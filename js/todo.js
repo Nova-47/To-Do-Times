@@ -54,6 +54,13 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault();
+
+  // Check if the number of todos exceeds 4
+  if (toDos.length >= 4) {
+    alert("You have too many goals right now. Maybe it's time to clear one!");
+    return;
+  }
+
   const newTodo = toDoInput.value;
   toDoInput.value = "";
   const newTodoObj = {
@@ -129,3 +136,12 @@ function startFireworks(x, y) {
 
   animate();
 }
+function doubleInputSize() {
+  toDoInput.style.width = "600px"; // 너비를 두 배로
+  toDoInput.style.padding = "15px"; // 내부 여백 증가
+  toDoInput.style.fontSize = "1.5rem"; // 폰트 크기 증가
+  toDoInput.style.transition = "all 0.5s"; // 부드러운 전환 효과
+}
+
+// 초기 로드 시 크기 변경
+doubleInputSize();
