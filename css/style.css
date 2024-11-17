@@ -174,8 +174,19 @@ body {
 #quote {
   color: bisque;
   padding: 7px;
-  position: absolute; 
-  top: 80%; 
+  position: absolute;
+  top: 80%;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
+  height: auto; /* 높이 자동 설정 */
+}
+
+#quote span:first-child {
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+#quote span:last-child {
+  margin-top: 23px;
+  opacity: 0.9;
 }
