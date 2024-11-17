@@ -136,19 +136,21 @@ function startFireworks(x, y) {
   animate();
 }
 function doubleInputSize() {
-  // 초기 스타일 설정
-  toDoInput.style.transition = "none";
-  toDoInput.style.width = "300px"; // 초기값
-  toDoInput.style.padding = "5px"; // 초기값
-  toDoInput.style.fontSize = "1rem"; // 초기값
+  toDoInput.style.display = "none";
+  toDoInput.offsetHeight;
+  toDoInput.style.display = "";
 
-  // 트랜지션 적용 및 스타일 변경
+  toDoInput.style.transition = "none";
+  toDoInput.style.width = "300px";
+  toDoInput.style.padding = "5px";
+  toDoInput.style.fontSize = "1rem";
+
   setTimeout(() => {
-    toDoInput.style.transition = "all 0.5s";
+    toDoInput.style.transition = "all 0.7s";
     toDoInput.style.width = "600px";
     toDoInput.style.padding = "15px";
     toDoInput.style.fontSize = "1.5rem";
-  }, 100); // 약간의 지연 시간
+  }, 100);
 }
 
 doubleInputSize();
