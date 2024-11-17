@@ -139,7 +139,7 @@ function doubleInputSize() {
   toDoInput.style.width = "600px";
   toDoInput.style.padding = "15px";
   toDoInput.style.fontSize = "1.5rem";
-  toDoInput.style.transition = "all 0.5s";
+  toDoInput.style.transition = "all 1.5s";
 }
 
 doubleInputSize();
