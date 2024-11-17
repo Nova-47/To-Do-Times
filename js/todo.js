@@ -38,7 +38,7 @@ function paintToDo(newTodo) {
 
   const deleteButton = document.createElement("button");
   deleteButton.setAttribute("id", "delete-btn");
-  deleteButton.innerText = "❌";
+  deleteButton.innerText = "\u00d7";
   deleteButton.addEventListener("click", (event) => {
     const li = event.target.parentElement;
     li.remove();
@@ -74,7 +74,6 @@ if (savedToDos !== null) {
   parsedToDos.forEach(paintToDo);
 }
 
-// 폭죽 애니메이션
 function startFireworks(x, y) {
   const canvas = document.createElement("canvas");
   canvas.style.position = "absolute";
