@@ -32,13 +32,13 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 
 bgImage.src = `img/${chosenImage}`;
-bgImage.style.width = "100%"; 
-bgImage.style.height = "100%"; 
+bgImage.style.width = "100%";
+bgImage.style.height = "100%";
 bgImage.style.objectFit = "cover";
-bgImage.style.position = "fixed"; 
-bgImage.style.top = "0"; 
+bgImage.style.position = "fixed";
+bgImage.style.top = "0";
 bgImage.style.left = "0";
-bgImage.style.zIndex = "-1"; 
+bgImage.style.zIndex = "-1";
 
 document.body.appendChild(bgImage);
 
