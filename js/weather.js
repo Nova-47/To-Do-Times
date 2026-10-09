@@ -1,6 +1,6 @@
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-const API_KEY = "***REMOVED***";
+const API_KEY = window.WEATHER_API_KEY; // js/config.js 에서 설정 (git 미추적)
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
@@ -27,7 +27,7 @@ navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-const API_KEY = "***REMOVED***";
+const API_KEY = window.WEATHER_API_KEY; // js/config.js 에서 설정 (git 미추적)
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
