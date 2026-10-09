@@ -1,6 +1,6 @@
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-const API_KEY = "***REMOVED***";
+const API_KEY = "4b655f37da6fa39a12fea9b22c0cc694";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
@@ -27,7 +27,7 @@ navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-const API_KEY = "***REMOVED***";
+const API_KEY = "4b655f37da6fa39a12fea9b22c0cc694";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
